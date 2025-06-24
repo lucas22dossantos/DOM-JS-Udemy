@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #333;
+}
+
+.contenedor {
+  border: 2px dashed #aaa;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.parrafo {
+  color: #007bff;
+}
+
+.caja {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.especial {
+  background-color: #ffc107;
+}
+
+.item {
+  list-style: square;
+  margin-left: 20px;
+}
