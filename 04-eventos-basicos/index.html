@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eventos en JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Eventos en JavaScript</h1>
+
+    <!-- CLICK -->
+    <button id="clickBtn">Click</button>
+
+    <!-- DBLCLICK -->
+    <button id="dblclickBtn">Doble Click</button>
+
+    <!-- MOUSEOVER -->
+    <button id="mouseOverBtn">Mouse Over</button>
+
+    <!-- MOUSEOUT -->
+    <button id="mouseOutBtn">Mouse Out</button>
+
+    <!-- KEYDOWN -->
+    <input type="text" id="keydownInput" placeholder="Presiona una tecla" />
+
+    <!-- KEYUP -->
+    <input type="text" id="keyupInput" placeholder="Suelta una tecla" />
+
+    <!-- SUBMIT -->
+    <form id="form">
+      <input type="text" required placeholder="Tu nombre" />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- CHANGE -->
+    <select id="selector">
+      <option value="">Selecciona algo</option>
+      <option value="1">Uno</option>
+      <option value="2">Dos</option>
+    </select>
+
+    <!-- INPUT -->
+    <input type="text" id="inputText" placeholder="Escribe algo" />
+
+    <!-- LOAD (no necesita botón) -->
+
+    <!-- BOTÓN PARA CREAR DINÁMICO -->
+    <button id="crearDinamico">Crear botón dinámico</button>
+
+    <section id="ejercicios">
+      <h2>Ejercicios</h2>
+
+      <!-- EJERCICIO 1: Contador de clics -->
+      <button id="contadorBtn">Contar clics</button>
+      <p id="contadorTexto"></p>
+
+      <!-- EJERCICIO 2: Cambiar color con teclado -->
+      <p>Pulsa las teclas R, G o B para cambiar el fondo</p>
+
+      <!-- EJERCICIO 3: Validación en tiempo real -->
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="Escribe tu contraseña"
+      />
+      <p id="nivelSeguridad"></p>
+
+      <!-- EJERCICIO 4: Lista de tareas -->
+      <form id="formTareas">
+        <input type="text" id="tareaInput" placeholder="Nueva tarea" required />
+        <button type="submit">Agregar tarea</button>
+      </form>
+      <ul id="listaTareas"></ul>
+    </section>
+
+    <script src="js/eventos.js"></script>
+  </body>
+</html>
