@@ -1,55 +1,104 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
-  padding: 20px;
-  background-color: #f0f0f0;
-  background: #ccc;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 2rem;
 }
 
-/* Título */
+/* Títulos */
 h1 {
+  margin-bottom: 1.5rem;
   text-align: center;
-  margin-bottom: 30px;
+  color: #2c3e50;
 }
 
-/* Botones, inputs, selects y formulario alineados y espaciados */
-button,
-input,
-select,
-form {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  width: 90%;
-  max-width: 300px;
-  font-size: 16px;
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #34495e;
 }
 
-/* Colores suaves */
+/* Estilo general de botones */
 button {
-  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  background-color: #3498db;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #2980b9;
 }
 
-input,
+/* Inputs */
+input[type="text"],
+input[type="password"],
 select {
+  padding: 0.5rem;
+  margin: 0.3rem 0;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
 }
 
-/* Estilo para el botón dinámico si se agrega */
-#dinamico {
-  background-color: #17a2b8;
-  color: white;
+/* Formularios */
+form {
+  margin: 1rem 0;
 }
 
+/* Lista de tareas */
+#listaTareas {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+#listaTareas li {
+  background-color: #ecf0f1;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listaTareas button {
+  background-color: #e74c3c;
+}
+
+#listaTareas button:hover {
+  background-color: #c0392b;
+}
+
+/* Sección de ejercicios */
 #ejercicios {
-  margin-top: 40px;
-  padding: 20px;
-  border-top: 2px solid #ccc;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mensaje de nivel de seguridad */
+#nivelSeguridad {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Botón dinámico (creado con JS) */
+#dinamico {
+  margin-top: 1rem;
 }
